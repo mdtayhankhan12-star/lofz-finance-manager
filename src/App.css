@@ -9,3 +9,14 @@ body { margin: 0; }
 main { flex: 1; padding: 24px; }
 .muted { color: #6b7280; }
 @media (max-width: 720px) { .shell { flex-direction: column; } .sidebar { width: auto; } .sidebar nav { flex-direction: row; overflow-x: auto; } }
+.panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(20,33,61,.06); }
+.panel h3 { margin: 0 0 12px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 12px; }
+.grid2 label { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.grid2 input, .grid2 select, button { font: inherit; padding: 9px 10px; border-radius: 8px; border: 1px solid #d1d5db; }
+button { background: #14213d; color: #fff; border: 0; cursor: pointer; }
+button:disabled { opacity: .6; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eef0f4; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.error { color: #b91c1c; }

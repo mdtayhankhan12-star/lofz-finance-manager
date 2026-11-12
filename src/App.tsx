@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Expenses from "./pages/Expenses";
 
 // Phase 1: কাঠামো ও নেভিগেশন। ডেটা ও হিসাব পরের ধাপে।
 const PAGES = [
@@ -29,7 +30,7 @@ export default function App() {
       </aside>
       <main>
         <h2>{current?.label}</h2>
-        <p className="muted">এই পেজের ডেটা ও ফর্ম পরের ধাপে যোগ হবে।</p>
+        {page === "expenses" ? <Expenses /> : <p className="muted">এই পেজের ডেটা ও ফর্ম পরের ধাপে যোগ হবে।</p>}
       </main>
     </div>
   );

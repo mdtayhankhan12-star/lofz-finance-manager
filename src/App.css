@@ -1,0 +1,11 @@
+:root { font-family: system-ui, "Noto Sans Bengali", sans-serif; color: #14213d; background: #f7f8fb; }
+body { margin: 0; }
+.shell { display: flex; min-height: 100vh; }
+.sidebar { width: 220px; background: #14213d; color: #fff; padding: 20px; }
+.sidebar h1 { font-size: 18px; margin: 0 0 16px; }
+.sidebar nav { display: flex; flex-direction: column; gap: 6px; }
+.sidebar button { background: transparent; color: #cfd6e4; border: 0; text-align: left; padding: 10px; border-radius: 8px; cursor: pointer; font: inherit; }
+.sidebar button.active, .sidebar button:hover { background: #22345c; color: #fff; }
+main { flex: 1; padding: 24px; }
+.muted { color: #6b7280; }
+@media (max-width: 720px) { .shell { flex-direction: column; } .sidebar { width: auto; } .sidebar nav { flex-direction: row; overflow-x: auto; } }
